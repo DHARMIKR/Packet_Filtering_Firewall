@@ -4,7 +4,7 @@ Detect and Drop Unwanted IP Addresses coming to your Network
 Can only usable at Linux Systems.
 
 You have to use one command to change some Linux IP Tables Rules.
-Command :- iptables -I FORWARD -j NFQUEUE --queue-num 0 (It is only applied when you want to filter forwarde trafic.)
+Command :- iptables -I FORWARD -j NFQUEUE --queue-num 0 (It is only applied when you want to filter forwarded trafic.)
 
 If you want to apply firewall for your system then use below command.
 command :- iptables -I OUTPUT -j NFQUEUE --queue-num 0 && iptables -I INPUT -j NFQUEUE --queue-num 0
